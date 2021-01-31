@@ -1,0 +1,21 @@
+function even(num){
+    const str = num.toString();
+     const result = [str[0]];
+  
+   for(var x=1; x<str.length; x++)
+  {
+    if((str[x-1]%2 === 0)&&(str[x]%2 === 0))
+     {
+      result.push('-', str[x]);
+     }
+    else
+     {
+      result.push(str[x]);
+     }
+  }
+  return result.join('')
+
+}
+var result=even(23456);
+console.log(result);
+module.exports=even;
